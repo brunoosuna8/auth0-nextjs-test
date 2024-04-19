@@ -11,7 +11,7 @@ export default function UserInfo(){
                 <div>
                     <h2>{user.nickname}</h2>
                     <a href="/api/auth/logout">logout</a>
-                    <Link href={"/tokenInPage"}>token</Link>
+                    <Link href={"/tokenInPage"}>get token</Link>
                 </div>
             ) : (
                 <a href="/api/auth/login">Login</a>

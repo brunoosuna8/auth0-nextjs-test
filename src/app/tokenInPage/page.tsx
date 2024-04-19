@@ -2,9 +2,10 @@ import GetTokenComponent from "@/components/GetTokenComponent";
 import {getAccessToken} from "@auth0/nextjs-auth0";
 
 export default async function TokenInPage(){
-    let token:any;
+    let token:string | undefined;
     try{
-        const { accessToken } = await getAccessToken();
+
+        const { accessToken } = await getAccessToken()
         token = accessToken
         console.log("accessToken",accessToken)
     }
